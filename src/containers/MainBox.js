@@ -11,7 +11,14 @@ class MainBox extends React.Component {
     userData: userData,
     photo: photo,
     cocktails: cocktails,
-    currentTab: "placeholder"
+    currentTab: (
+      <div>
+      <h2>{userData.name}</h2>
+      <h2>{userData.description}</h2>
+      <h2>{userData.catchphrase}</h2>
+      <h2>{userData.age}</h2>
+      </div>
+    )
   }
 
   clickHandler = (event) => {
